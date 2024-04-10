@@ -1,0 +1,375 @@
+/* Nombre Completo: Luisa Fda Ramírez Cardona
+Clan: Clan Gates
+Fecha: Abril 8 de 2024 */
+
+/* Variables definidas en el root*/
+:root{
+   --color-negro:rgb(0, 0, 0);
+   --color-white:#f1f1f1;
+   --botones-glitch-border-right:5px solid blue;
+   --botones-glitch-border-left:5px solid red ;
+   --familia-fuente:'Neue Haas Grotesk Display Pro', sans-serif;
+}
+
+/* Reseteo modelo de caja */
+
+html{
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after{
+    box-sizing: inherit;
+    margin: 0;
+    letter-spacing: 1.2px;
+    font-family: var(--familia-fuente);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+/* Estilos body */
+
+body{
+    margin: 1rem;
+    font-family: var(--familia-fuente);
+    letter-spacing: 1.2px;
+}
+
+.video-fondo{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;;
+    z-index: -1;
+}
+
+/* Estilos Header */
+
+.buscador-carro{
+    display: flex;
+    gap:1rem;
+    list-style: none;
+}
+
+.buscador-carro{
+    font-size: 1.5rem;
+}
+
+.contenedor-header{
+    height: 8rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-negro);
+    color:var(--color-white);
+    padding: 1.5rem;
+}
+
+.contenedor-logo-navegacion{
+    display: flex;
+}
+
+.contenedor-logo-navegacion img{
+    width: 18rem;
+    height: 6rem;
+    margin-right:  1rem;
+}
+
+.contenedor-navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navegacion{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap:1rem;
+    font-weight: 600;
+}
+
+.navegacion a{
+    cursor:pointer;
+    text-decoration: none;
+    color:var(--color-white);
+}
+
+/* Estilos Main */
+
+/* Estilos Primera sección */
+
+.imagen-placebo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 35rem;
+    width: 100%;
+}
+.imagen-placebo img{
+    height: inherit;
+    width: 50rem;
+}
+
+/* Estilos Segunda sección */
+
+.contenedor-watch-tour-order-listen{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    gap:20%
+}
+
+.contenedor-watch-tour-order-listen figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 25rem;
+}
+
+.contenedor-watch-tour-order-listen figcaption{
+    font-weight: bold;
+    color:var(--color-white);
+    padding-top: 0.3rem;
+}
+
+.contenedor-watch-tour-order-listen img{
+    width: 100%;
+    height: 80%;
+}
+
+/* Estilos Tercera sección */
+
+.articulos{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width:90%;
+    gap:2%
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    height: 35rem;
+    margin-top:5rem;
+}
+
+.articulo figure{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    background-color: var(--color-white);
+}
+
+.articulo img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 100%;
+}
+
+.articulo aside{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 0.5rem;
+    color:var(--color-white)
+}
+
+.articulo-nombre-precio h2{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+
+.articulo-nombre-precio p{
+    font-size: 0.7;
+    font-weight: 600;
+}
+
+.articulo button{
+    padding: 0.5rem;
+    border-radius: 5rem;
+    border:none;
+    background-color: var(--color-white);
+    transition: all 0.5s ease;
+}
+
+.articulo button{
+    transform: scale(1.5);
+}
+
+.articulo button:hover{
+    border-right: var(--botones-glitch-border-right);
+    border-left: var(--botones-glitch-border-left);
+}
+
+.articulo button a{
+    color:var(--color-negro);
+    font-weight: bold;
+}
+
+/* Estilos Cuarta Sección */
+.conciertos{
+    margin:2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid var(--color-white);
+    font-weight: bold;
+    color:var(--color-white);
+}
+
+.titulo-conciertos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+}
+
+.concierto{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid var(--color-white);
+}
+
+.concierto button{
+    padding: 0.5rem;
+    border-radius: 5rem;
+    border:none;
+    background-color: var(--color-white);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    color:var(--color-negro);
+    width: 6rem;
+}
+
+.concierto button{
+    transform: scale(1.1);
+}
+
+.concierto button:hover{
+    border-right: var(--botones-glitch-border-right);
+    border-left: var(--botones-glitch-border-left);
+}
+
+/* Estilos Quinta Sección */
+
+.follow-sign{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.follow{
+    color:var(--color-white);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.follow p{
+    margin-bottom: 1rem;
+}
+
+.follow button{
+    padding: 0.5rem;
+    border-radius: 5rem;
+    border:none;
+    background-color: var(--color-white);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    color:var(--color-negro);
+    margin-bottom: 7rem;
+}
+
+.follow button:hover{
+    border-right: var(--botones-glitch-border-right);
+    border-left: var(--botones-glitch-border-left);
+}
+
+.follow button{
+    transform: scale(1.5);
+}
+
+.sign{
+    color:var(--color-white);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign p{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.sign button{
+    padding: 0.5rem;
+    border-radius: 5rem;
+    border:none;
+    background-color: var(--color-white);
+    transition: all 0.5s ease;
+    font-weight: bold;
+    color:var(--color-negro);
+    margin-bottom: 2rem;
+}
+
+.sign button:hover{
+    border-right: var(--botones-glitch-border-right);
+    border-left: var(--botones-glitch-border-left);
+}
+
+.sign button{
+    transform: scale(1.5);
+}
+
+/* Estilos Footer */
+
+.pie-pagina{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.redes-sociales{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    gap:1rem;
+    margin-top:6rem;
+}
+.redes-sociales i{
+    color:var(--color-white)
+}
+
+.terminos-condiciones{
+    display:flex;
+    justify-content: center;
+    gap:3rem;
+    margin-top:2rem;
+    color:var(--color-white)
+}
